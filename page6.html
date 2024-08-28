@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    
+    <style>
+      body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    background: url(./gifsllady\ ✮.jpeg);
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1; /* Allow the gallery to grow and fill available space */
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #c94040;
+    border-radius: 10px;
+    transform: rotate(calc(var(--rotation) * 1deg));
+}
+
+.image-gallery img:nth-child(odd) {
+    --rotation: -5;
+}
+
+.image-gallery img:nth-child(even) {
+    --rotation: 5;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1) rotate(calc(var(--rotation) * 1deg));
+    transition: transform 0.3s;
+}
+
+.text {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0; /* Add space around the text */
+}
+
+button {
+    background-color: #c94040; /* Match button color with border */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #a1236f; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="image-gallery">
+        <img src="./IMG-20240828-WA0013.jpg" alt="">
+
+     <img src="./IMG-20240828-WA0010.jpg" alt="">
+     <img src="./IMG-20240828-WA0012.jpg" alt="">
+     
+     <img src="./IMG-20240828-WA0016.jpg" alt="">
+     <img src="./IMG-20240828-WA0017.jpg" alt="">
+     <img src="./IMG-20240828-WA0018.jpg" alt="">
+     <img src="./IMG-20240828-WA0019.jpg" alt="">
+     <img src="./IMG-20240828-WA0020.jpg" alt="">
+     <img src="./IMG-20240828-WA0021.jpg" alt="">
+     <img src="./IMG-20240828-WA0002.jpg" alt="">
+     <img src="./IMG-20240828-WA0003.jpg" alt="">
+     <img src="./IMG-20240828-WA0004.jpg" alt="">
+     <img src="./IMG-20240828-WA0005.jpg" alt="">
+     <img src="./IMG-20240828-WA0035.jpg" alt="">
+     <img src="./IMG-20240828-WA0006.jpg" alt="">
+     <img src="./IMG-20240828-WA0007.jpg" alt="">
+     <img src="./IMG-20240828-WA0008.jpg" alt="">
+     <img src="./IMG-20240828-WA0009.jpg" alt="">
+     <img src="./IMG-20240828-WA0022.jpg" alt="">
+     <img src="./IMG-20240828-WA0023.jpg" alt="">
+     <img src="./IMG-20240828-WA0024.jpg" alt="">
+     <img src="./IMG-20240828-WA0014.jpg" alt="">
+     <img src="./IMG-20240828-WA0025.jpg" alt="">
+     <img src="./IMG-20240828-WA0026.jpg" alt="">
+     <img src="./IMG-20240828-WA0027.jpg" alt="">
+     <img src="./IMG-20240828-WA0028.jpg" alt="">
+     <img src="./IMG-20240828-WA0029.jpg" alt="">
+     <img src="./IMG-20240828-WA0030.jpg" alt="">
+     <img src="./IMG-20240828-WA0031.jpg" alt="">
+     <img src="./IMG-20240828-WA0032.jpg" alt="">
+     <img src="./IMG-20240828-WA0033.jpg" alt="">
+     <img src="./IMG-20240828-WA0034.jpg" alt="">
+     <img src="./IMG-20240828-WA0015.jpg" alt="">
+
+     <img src="./IMG-20240828-WA0036.jpg" alt="">
+     <img src="./IMG-20240828-WA0037.jpg" alt="">
+     <img src="./IMG-20240828-WA0038.jpg" alt="">
+     <img src="./IMG-20240828-WA0039.jpg" alt="">
+     <img src="./IMG-20240828-WA0040.jpg" alt="">
+     <img src="./IMG-20240828-WA0041.jpg" alt="">
+     <img src="./IMG-20240828-WA0042.jpg" alt="">     
+     <img src="./IMG-20240828-WA0042.jpg" alt="">
+     <img src="./IMG-20240828-WA0043.jpg" alt="">
+
+     <div class="text">
+        That was just a few pics that i had in my phone <br>
+        u have all of the rest, the beauiful rest, and u wont send me??😤😤
+    </div>
+    <button><a href="page7.html">goto next 😤</a></button>
+    </div>
+
+   
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(./Abstract\ wallpaper\ by\ misia_bela\ -\ Download\ on\ ZEDGE™\ _\ c1f7.jpeg);
+        }
+        p, h5, h3{
+            color: white;
+        }
+       .popover-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .no-btn {
+        background-color: #ff0066; /* Hot pink for flair */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .no-btn:focus + .popover,
+    .no-btn:active + .popover {
+        display: block;
+    }
+
+    .no-btn:hover {
+        background-color: #e60059;
+    }
+
+    .popover {
+        display: none;
+        width: 150px;
+        background-color: #6cb7e5; /* Bright yellow for contrast */
+        color: #333;
+        border: 2px solid #ff66b2; /* Complementary border */
+        border-radius: 10px;
+        padding: 15px;
+        position: absolute;
+        z-index: 1;
+        top: 110%; /* Position below the button */
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        animation: popover-appear 0.5s ease-out;
+    }
+
+    .popover::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #ffe066 transparent;
+    }
+
+    .splash-content {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: #ff0066; /* Splashy pink text */
+    }
+
+    @keyframes popover-appear {
+        0% {
+            opacity: 0;
+            transform: translateX(-50%) scale(0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <p>then... </p>
+    <h3>did u propose?</h3>
+
+    <div>
+        
+         <div class="popover-container">
+        <button class="no-btn">no</button>
+        <div class="popover">
+            <div class="splash-content">
+            i know u wont, onkau avalo thiriyam ila
+            </div>
+        </div>
+    </div>
+    <button class="no-btn">Im not even taking Yes as an option,just so u know</button>
+
+    <p>but please do it soon, so i could learn how to be <br> a perfect girlfrined before i get to be one</p>
+<h5>which will not happen in the near future</h5>    
+</div>
+<button><a href="page5.html">sorry theres more..</a></button>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession</title>
+    <style>
+        body {
+            background: #2e2e2e; /* Dark, mysterious background */
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* Stack elements vertically */
+            padding: 20px; /* Add some padding around the edges */
+        }
+
+        .intro-text {
+            text-align: center;
+            margin-bottom: 20px; /* Space between the text and the card */
+            font-size: 18px;
+        }
+
+        .confession-card {
+            background-color: #444;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 400px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Dramatic shadow */
+        }
+
+        .confession-card h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .confession-card p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: none; /* Hidden by default */
+            color: #ffcccc; /* Soft pink for the secret text */
+        }
+
+        button {
+            background-color: #ff4d4d; /* Attention-grabbing red */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #e60000; /* Darker red on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+<body>
+    <p class="intro-text">No, actually I wrote it thinking 'bout you too aaaaand...</p>
+
+    <div class="confession-card">
+        <h1>There's a secret I've Been Meaning to Tell You... for a long time</h1>
+        <p id="secret-message">
+            You gotta wait for the next page dude... slowww down... 😳
+            <br><br>
+            <button onclick="goToNextPage()">Next Page</button>
+        </p>
+        <button onclick="revealSecret()">Reveal</button>
+    </div>
+
+    <script>
+        function revealSecret() {
+            const message = document.getElementById('secret-message');
+            message.style.display = 'block'; // Reveal the secret message
+        }
+
+        function goToNextPage() {
+            window.location.href = 'page11.html'; // Change to your next page URL
+        }
+    </script>
+
+</body>
+</html>

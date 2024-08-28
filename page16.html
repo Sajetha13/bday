@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Message</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #f0f8ff, #faebd7, #f5f5dc, #e6e6fa, #d8bfd8); /* Horizontal pastel stripes */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* Needed for absolute positioning of the button */
+            color: #444; /* Soft text color */
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .sorry-message {
+            font-size: 18px;
+            margin-bottom: 20px;
+            background: #ffe4e1; /* Pastel pink background for the sorry message */
+            padding: 15px;
+            border-radius: 10px;
+            color: #555; /* Soft text color */
+        }
+
+        .hidden-message {
+            font-size: 16px;
+            display: none; /* Hidden by default */
+            margin-top: 20px;
+            background: #e0ffff; /* Pastel cyan background for the hidden message */
+            padding: 15px;
+            border-radius: 10px;
+            color: #555; /* Soft text color */
+        }
+
+        button {
+            background-color: #ffb6c1; /* Pastel pink background for the button */
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff69b4; /* Darker pink on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        .next-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffb6c1; /* Pastel pink background for the button */
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .next-button:hover {
+            background-color: #ff69b4; /* Darker pink on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sorry-message">
+            I'm sorry for being a bad friend... this is my first time, so bear with me.
+        </div>
+        <button onclick="revealMessage()">Uh</button>
+        <div class="hidden-message" id="hidden-message">
+            I understand you a lot, but most of the times (on conversations) I don't understand the hell that you speak, so you better talk loud or understand that I have remembery loss and explain everything again.. 🙂☝🏻️
+        </div>
+    </div>
+
+    <button class="next-button" onclick="window.location.href='page17.html'">Next</button>
+
+    <script>
+        function revealMessage() {
+            const message = document.getElementById('hidden-message');
+            message.style.display = 'block'; // Reveal the hidden message
+        }
+    </script>
+</body>
+</html>
