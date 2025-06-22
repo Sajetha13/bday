@@ -15,4 +15,4 @@ Expect:
 
 ---
 
-> ✨ Not meant for the public. But if you found this… pretend you didn’t, okay? 🤫
+> ✨ Not meant for the public. But if you found this… pretend you didn’t, okay? 😭
